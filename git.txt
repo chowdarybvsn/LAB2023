@@ -1,0 +1,114 @@
+git config user.name  -----> to check user exists
+
+git config --global user.name "venkat bobba"
+
+git config --global user.email "vscbobba@gmail.com"
+
+git status
+
+git init
+
+git add <filename>
+
+git commit -m "cust message"
+
+git commit -a -m "cust message"   (not for a new file)
+
+git commit --amend
+
+git log --full-history
+
+git log --oneline
+
+
+
+git--> master branch but in github---> main branch
+
+Head: latest commit on your branch
+
+
+git branch  -----> show branches
+
+git branch <branchname>  ----> create new branch
+
+git switch <existing branchname>
+
+git checkout <existing branch name>
+
+git checkout -b <newbranch>
+
+git switch -c <new branchname>
+git switch -   ----> move to prevously used branch
+git branch -d <branch name>   ((u should not be in that branch))
+
+git branch -m <change/new branch name>   ((u should be in the branch which u want to change name of that))
+
+
+git diff
+git diff HEAD
+git diff --staged or (cached)
+git diff <commit> <commit>
+git diff <branch1> <branch2>
+
+
+
+git stash    ---> to keep unstaged/staged files to hide
+
+git stash pop   ---> to restore back...like cut paste
+
+git stash apply ----> one time restore..like copy paste from stash
+
+git stash list  ----> list of changes
+
+git stash apply stash@{2}
+
+git stash drop stash@{2}
+
+git stash clear
+
+
+git checkout <commit number> ---> to create new branch in old history
+git checkout HEAD~1
+
+git checkout HEAD filename   ---> undo changes in a file with out manual modifying
+git checkout -- filename     ----> same as above
+
+
+git restore <filename>              -----> after commit some changes in a file, to get back to original file use this.
+git restore --source HEAD~2 <filename>
+
+git restore --staged <filename>  ---> to get back file from staged to working area (simply unstage a file)
+
+
+git reset <commit-hash>    ---> to undo our commits (no changes in file, only git update)
+
+git reset --hard <commit-hash>  ----> to undo our commits (both git git and files will update)
+
+git revert <commit-hash>   ----->  like reset cmd, but with a new commit in the history
+
+
+
+
+git remote -v
+
+git remote add <name> <url>
+
+git remote rename <old> <new>
+
+git remote remove <name>
+
+"git new repo on github, connect to local repo(add remote cmd), push to github."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
