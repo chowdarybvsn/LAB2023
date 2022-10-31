@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+ name: ngrepli-controller
+ labels:
+   type: frontend
+   app: web-sets
+spec:
+  replicas:
+  template:
+      metadata:
+        name: myng
+        labels:
+           app: web
+  selector:
+    matchLabel:
+         app: web
+
+
+
+
+
+
+
+
+  
